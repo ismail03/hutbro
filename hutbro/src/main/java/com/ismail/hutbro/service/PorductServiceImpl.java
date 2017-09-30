@@ -51,6 +51,8 @@ public class PorductServiceImpl implements ProductService {
 	@Override
 	public List<Image> getProductImages(Long productId) {
 		// TODO Auto-generated method stub
+		if(productRepositroy.findOne(productId) == null)
+			return new ArrayList<Image>();
 		return productRepositroy.findOne(productId).getImages();
 	}
 	@Override
