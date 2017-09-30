@@ -20,6 +20,11 @@ import javax.persistence.Table;
 @Table(name="PRODUCT")
 public class Product implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	/* `PROD_ID` INT NOT NULL,
 	  `PROD_NAME` VARCHAR(45) NULL,
 	  `PROD_DESC` VARCHAR(45) NULL,
